@@ -804,6 +804,18 @@
          
       </script>
       <script src="assets/js/main.js"></script>
-      <script src="assets/js/main.js"></script>
+      <!-- <script src="assets/js/main.js"></script> -->
+      <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".mobile-nav-toggle");
+  const navbar = document.querySelector("#navbar");
+
+  toggle.addEventListener("click", function () {
+    navbar.classList.toggle("navbar-mobile");
+    this.classList.toggle("bi-list");
+    this.classList.toggle("bi-x");
+  });
+});
+</script>
    </body>
 </html>
